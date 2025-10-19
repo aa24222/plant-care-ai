@@ -11,26 +11,13 @@ AI-powered computer vision system for detecting plant diseases in tomatoes, pepp
 
 ## Detected Diseases
 
-**Peppers:**
-- Bacterial Spot
-- Healthy
+| Plant | Disease Classes | Count |
+|-------|----------------|-------|
+| **Peppers** | Bacterial Spot, Healthy | 2 |
+| **Potatoes** | Early Blight, Late Blight, Healthy | 3 |
+| **Tomatoes** | Bacterial Spot, Early Blight, Late Blight, Leaf Mold, Septoria Leaf Spot, Spider Mites (Two-spotted), Target Spot, Yellow Leaf Curl Virus, Mosaic Virus, Healthy | 10 |
 
-**Potatoes:**
-- Early Blight
-- Late Blight  
-- Healthy
-
-**Tomatoes:**
-- Bacterial Spot
-- Early Blight
-- Late Blight
-- Leaf Mold
-- Septoria Leaf Spot
-- Spider Mites (Two-spotted)
-- Target Spot
-- Yellow Leaf Curl Virus
-- Mosaic Virus
-- Healthy
+**Total Classes:** 15
 
 ## Getting Started
 > **Note:** This project uses transfer learning. The base model (`yolov8n-cls.pt`) downloads automatically from Ultralytics. Your fine-tuned weights (`best.pt`) are created during training and saved to `runs/classify/plant_disease_v1/weights/`.
