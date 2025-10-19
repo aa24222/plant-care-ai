@@ -33,6 +33,7 @@ AI-powered computer vision system for detecting plant diseases in tomatoes, pepp
 - Healthy
 
 ## Getting Started
+> **Note:** This project uses transfer learning. The base model (`yolov8n-cls.pt`) downloads automatically from Ultralytics. Your fine-tuned weights (`best.pt`) are created during training and saved to `runs/classify/plant_disease_v1/weights/`.
 
 ### 1. Clone Repository
 ```bash
