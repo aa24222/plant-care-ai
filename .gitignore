@@ -1,0 +1,34 @@
+# ===== DATASETS - NEVER COMMIT =====
+datasets/
+data/
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+
+# ===== MODEL WEIGHTS - NEVER COMMIT =====
+runs/
+models/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+
+# ===== PYTHON =====
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.env
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== TEMP =====
+*.tmp
+temp_*

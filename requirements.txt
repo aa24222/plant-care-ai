@@ -1,0 +1,6 @@
+# Project Requirements
+pip install jupyter
+pip install ultralytics  # YOLOv8
+pip install opencv-python
+pip install matplotlib
+pip install pandas
