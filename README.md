@@ -76,9 +76,7 @@ Open and run `train_model.ipynb` in Jupyter:
 jupyter notebook train_model.ipynb
 ```
 
-Or train via command line (coming soon).
-
-## 📈 Model Performance
+## Model Performance
 
 - **Training Accuracy:** 100%
 - **Validation Accuracy:** 92%
@@ -105,6 +103,29 @@ plant-disease-detector/
 - **Visualization:** Matplotlib
 - **GPU:** CUDA (NVIDIA)
 
+## Model Weights Explained
+
+This project leverages **transfer learning** for efficient training:
+
+### Pretrained Base Model
+- **File:** `yolov8n-cls.pt` (~6 MB)
+- **Source:** Downloaded automatically from [Ultralytics GitHub](https://github.com/ultralytics/assets/releases)
+- **Training:** Pre-trained on ImageNet dataset (1.2M images, 1000 object classes)
+- **Purpose:** Provides foundational knowledge of image features (edges, textures, patterns)
+- **Location:** Cached in `~/.cache/torch/hub/ultralytics/` after first download
+
+### Fine-tuned Model
+- **File:** `best.pt` (~6 MB)
+- **Created:** During training when you run `model.train()`
+- **Location:** `runs/classify/plant_disease_v1/weights/best.pt`
+- **Specialization:** Fine-tuned specifically for 16 plant disease classes
+- **Note:** Not included in this repository due to file size. Train it yourself following the [Getting Started](#getting-started) guide.
+
+**Why Transfer Learning?**
+- ✅ Faster training (~50 min vs hours from scratch)
+- ✅ Better accuracy with less data (92% with 41k images)
+- ✅ Leverages existing knowledge from millions of images
+  
 ## Roadmap
 
 - [x] Dataset exploration
