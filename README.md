@@ -5,7 +5,7 @@ AI-powered computer vision system for detecting plant diseases in tomatoes, pepp
 ## Project Overview
 
 - **Model:** YOLOv8 Classification (Nano)
-- **Dataset:** PlantVillage - 41,272 images across 16 disease classes
+- **Dataset:** PlantVillage - 41,272 images across 15 disease classes
 - **Accuracy:** ~92% validation accuracy
 - **Tech Stack:** Python, PyTorch, Ultralytics YOLOv8, Flask (planned)
 
@@ -54,7 +54,7 @@ Garden/
             └── PlantVillage/
                 ├── Pepper__bell___Bacterial_spot/
                 ├── Tomato_Early_blight/
-                └── ... (16 total classes)
+                └── ... (15 total classes)
 ```
 
 ### 4. Train Model
@@ -105,7 +105,7 @@ This project leverages **transfer learning** for efficient training:
 - **File:** `best.pt` (~6 MB)
 - **Created:** During training when you run `model.train()`
 - **Location:** `runs/classify/plant_disease_v1/weights/best.pt`
-- **Specialization:** Fine-tuned specifically for 16 plant disease classes
+- **Specialization:** Fine-tuned specifically for 15 plant disease classes
 - **Note:** Not included in this repository due to file size. Train it yourself following the [Getting Started](#getting-started) guide.
 
 **Why Transfer Learning?**
