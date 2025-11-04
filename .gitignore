@@ -1,4 +1,9 @@
-# ===== DATASETS - NEVER COMMIT =====
+# ===== SECRETS =====
+.env
+*.env
+.env.local
+
+# ===== DATASETS =====
 datasets/
 data/
 *.jpg
@@ -6,7 +11,7 @@ data/
 *.JPG
 *.JPEG
 
-# ===== MODEL WEIGHTS - NEVER COMMIT =====
+# ===== MODEL WEIGHTS =====
 runs/
 models/
 checkpoints/
@@ -17,7 +22,7 @@ checkpoints/
 *.pkl
 
 # ===== PYTHON =====
-.ipynb_checkpoints/
+*.ipynb
 __pycache__/
 *.pyc
 *.pyo

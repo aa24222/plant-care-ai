@@ -4,3 +4,5 @@ pip install ultralytics  # YOLOv8
 pip install opencv-python
 pip install matplotlib
 pip install pandas
+pip install roboflow
+pip install python-dotenv
