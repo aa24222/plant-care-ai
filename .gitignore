@@ -22,7 +22,6 @@ checkpoints/
 *.pkl
 
 # ===== PYTHON =====
-*.ipynb
 __pycache__/
 *.pyc
 *.pyo
