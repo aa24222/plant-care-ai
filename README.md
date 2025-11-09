@@ -109,9 +109,9 @@ This project leverages **transfer learning** for efficient training:
 - **Note:** Not included in this repository due to file size. Train it yourself following the [Getting Started](#getting-started) guide.
 
 **Why Transfer Learning?**
-- ✅ Faster training (~50 min vs hours from scratch)
-- ✅ Better accuracy with less data (92% with 41k images)
-- ✅ Leverages existing knowledge from millions of images
+- Faster training (~50 min vs hours from scratch)
+- Better accuracy with less data (92% with 41k images)
+- Leverages existing knowledge from millions of images
   
 ## Roadmap
 
